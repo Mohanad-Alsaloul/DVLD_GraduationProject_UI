@@ -144,11 +144,63 @@ namespace DVLD
         {
             InitializeComponent();
 
+            this.Shown += (s, e) => CenterWelcomePanel();
+            this.Resize += (s, e) => CenterWelcomePanel();
+            UpdateStatusBar();
+
             _frmLogin = frm;
 
             _QuestionGenerationTimer = new Timer();
             _QuestionGenerationTimer.Interval = 5000;
             _QuestionGenerationTimer.Tick += _QuestionGenerationTimer_Tick;
+        }
+
+        private void CenterWelcomePanel()
+        {
+            if (pnlWelcome == null || pnlWelcome.Parent == null)
+                return;
+
+            Control parent = pnlWelcome.Parent;
+
+            int topBoundary = parent == this
+                ? msMainMenue.Bottom
+                : 0;
+
+            pnlWelcome.Left = Math.Max(
+                0,
+                (parent.ClientSize.Width - pnlWelcome.Width) / 2
+            );
+
+            pnlWelcome.Top = topBoundary + Math.Max(
+                0,
+                (parent.ClientSize.Height - topBoundary - pnlWelcome.Height) / 2
+            );
+        }
+
+        private void pnlWelcome_Paint(object sender, PaintEventArgs e)
+        {
+            using (Pen borderPen = new Pen(
+                Color.FromArgb(215, 228, 245), 1))
+            {
+                Rectangle borderRect = new Rectangle(
+                    0,
+                    0,
+                    pnlWelcome.Width - 1,
+                    pnlWelcome.Height - 1
+                );
+
+                e.Graphics.DrawRectangle(borderPen, borderRect);
+            }
+        }
+
+        private void UpdateStatusBar()
+        {
+            lblStatusUser.Text =
+                clsGlobal.CurrentUser != null
+                ? "User: " + clsGlobal.CurrentUser.UserName
+                : "User: -";
+
+            lblStatusReady.Text = "● Ready";
         }
 
         private void localLicenseToolStripMenuItem_Click(object sender, EventArgs e)
@@ -171,6 +223,7 @@ namespace DVLD
 
         private void frmMain_Load(object sender, EventArgs e)
         {
+            UpdateStatusBar();
             this.BackColor = Color.White;
             lblLoggedInUser.Text = "LoggedIn User: " + clsGlobal.CurrentUser.UserName;
             this.Refresh();
@@ -308,5 +361,7 @@ namespace DVLD
             frmManageDocuments frm=new frmManageDocuments();
             frm.ShowDialog();
         }
+
+
     }
 }

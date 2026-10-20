@@ -63,5 +63,10 @@ namespace DVLD.Controls
             lblUserName.Text = "[???]";
             lblIsActive.Text = "[???]";
         }
+
+        private void ctrlPersonCard1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

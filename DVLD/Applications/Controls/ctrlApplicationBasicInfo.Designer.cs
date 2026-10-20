@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.llViewPersonInfo = new System.Windows.Forms.LinkLabel();
             this.lblStatusDate = new System.Windows.Forms.Label();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.label12 = new System.Windows.Forms.Label();
@@ -53,7 +54,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.lblApplicationID = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.llViewPersonInfo = new System.Windows.Forms.LinkLabel();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -67,6 +67,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(248)))), ((int)(((byte)(253)))));
             this.groupBox1.Controls.Add(this.llViewPersonInfo);
             this.groupBox1.Controls.Add(this.lblStatusDate);
             this.groupBox1.Controls.Add(this.pictureBox8);
@@ -92,12 +93,24 @@
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.lblApplicationID);
             this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.ForeColor = System.Drawing.Color.Black;
             this.groupBox1.Location = new System.Drawing.Point(3, 3);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(888, 212);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Application Basic Info";
+            // 
+            // llViewPersonInfo
+            // 
+            this.llViewPersonInfo.AutoSize = true;
+            this.llViewPersonInfo.Location = new System.Drawing.Point(720, 171);
+            this.llViewPersonInfo.Name = "llViewPersonInfo";
+            this.llViewPersonInfo.Size = new System.Drawing.Size(133, 20);
+            this.llViewPersonInfo.TabIndex = 187;
+            this.llViewPersonInfo.TabStop = true;
+            this.llViewPersonInfo.Text = "View Person Info.";
+            this.llViewPersonInfo.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llViewPersonInfo_LinkClicked);
             // 
             // lblStatusDate
             // 
@@ -355,22 +368,11 @@
             this.label4.TabIndex = 160;
             this.label4.Text = "ID:";
             // 
-            // llViewPersonInfo
-            // 
-            this.llViewPersonInfo.AutoSize = true;
-            this.llViewPersonInfo.Location = new System.Drawing.Point(720, 171);
-            this.llViewPersonInfo.Name = "llViewPersonInfo";
-            this.llViewPersonInfo.Size = new System.Drawing.Size(133, 20);
-            this.llViewPersonInfo.TabIndex = 187;
-            this.llViewPersonInfo.TabStop = true;
-            this.llViewPersonInfo.Text = "View Person Info.";
-            this.llViewPersonInfo.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llViewPersonInfo_LinkClicked);
-            // 
             // ctrlApplicationBasicInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(248)))), ((int)(((byte)(253)))));
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);

@@ -53,9 +53,11 @@
             // 
             // lblTitle
             // 
-            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblTitle.Location = new System.Drawing.Point(222, 134);
+            this.lblTitle.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblTitle.BackColor = System.Drawing.Color.Transparent;
+            this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(61)))), ((int)(((byte)(125)))));
+            this.lblTitle.Location = new System.Drawing.Point(214, 122);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(258, 39);
             this.lblTitle.TabIndex = 140;
@@ -67,6 +69,7 @@
             // 
             this.panel1.Controls.Add(this.cmbDocuments);
             this.panel1.Controls.Add(this.label1);
+            this.panel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(61)))), ((int)(((byte)(125)))));
             this.panel1.Location = new System.Drawing.Point(12, 187);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(687, 97);
@@ -74,10 +77,14 @@
             // 
             // cmbDocuments
             // 
+            this.cmbDocuments.BackColor = System.Drawing.Color.White;
+            this.cmbDocuments.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbDocuments.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbDocuments.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(61)))), ((int)(((byte)(125)))));
             this.cmbDocuments.FormattingEnabled = true;
             this.cmbDocuments.Location = new System.Drawing.Point(190, 41);
             this.cmbDocuments.Name = "cmbDocuments";
-            this.cmbDocuments.Size = new System.Drawing.Size(392, 21);
+            this.cmbDocuments.Size = new System.Drawing.Size(392, 25);
             this.cmbDocuments.TabIndex = 138;
             // 
             // label1
@@ -86,9 +93,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(17, 41);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(167, 20);
+            this.label1.Size = new System.Drawing.Size(152, 20);
             this.label1.TabIndex = 137;
-            this.label1.Text = "Select Decoument :";
+            this.label1.Text = "Select Document:";
             // 
             // groupBox1
             // 
@@ -98,7 +105,8 @@
             this.groupBox1.Controls.Add(this.nudMultipleChoice);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(61)))), ((int)(((byte)(125)))));
             this.groupBox1.Location = new System.Drawing.Point(11, 295);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(688, 130);
@@ -109,10 +117,10 @@
             // lblTotalQuestions
             // 
             this.lblTotalQuestions.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.lblTotalQuestions.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotalQuestions.Location = new System.Drawing.Point(516, 68);
+            this.lblTotalQuestions.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalQuestions.Location = new System.Drawing.Point(488, 33);
             this.lblTotalQuestions.Name = "lblTotalQuestions";
-            this.lblTotalQuestions.Size = new System.Drawing.Size(88, 16);
+            this.lblTotalQuestions.Size = new System.Drawing.Size(95, 22);
             this.lblTotalQuestions.TabIndex = 143;
             this.lblTotalQuestions.Text = "0   ";
             this.lblTotalQuestions.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -121,7 +129,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(495, 35);
+            this.label4.Location = new System.Drawing.Point(358, 35);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(124, 16);
             this.label4.TabIndex = 142;
@@ -129,29 +137,35 @@
             // 
             // nudTrueFalse
             // 
-            this.nudTrueFalse.Location = new System.Drawing.Point(282, 68);
+            this.nudTrueFalse.BackColor = System.Drawing.Color.White;
+            this.nudTrueFalse.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(61)))), ((int)(((byte)(125)))));
+            this.nudTrueFalse.Location = new System.Drawing.Point(215, 82);
             this.nudTrueFalse.Name = "nudTrueFalse";
-            this.nudTrueFalse.Size = new System.Drawing.Size(57, 22);
+            this.nudTrueFalse.Size = new System.Drawing.Size(57, 25);
             this.nudTrueFalse.TabIndex = 141;
+            this.nudTrueFalse.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.nudTrueFalse.ValueChanged += new System.EventHandler(this.nudTrueFalse_ValueChanged);
             // 
             // nudMultipleChoice
             // 
-            this.nudMultipleChoice.Location = new System.Drawing.Point(282, 35);
+            this.nudMultipleChoice.BackColor = System.Drawing.Color.White;
+            this.nudMultipleChoice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(61)))), ((int)(((byte)(125)))));
+            this.nudMultipleChoice.Location = new System.Drawing.Point(215, 35);
             this.nudMultipleChoice.Name = "nudMultipleChoice";
-            this.nudMultipleChoice.Size = new System.Drawing.Size(57, 22);
+            this.nudMultipleChoice.Size = new System.Drawing.Size(57, 25);
             this.nudMultipleChoice.TabIndex = 140;
+            this.nudMultipleChoice.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.nudMultipleChoice.ValueChanged += new System.EventHandler(this.nudMultipleChoice_ValueChanged);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(19, 74);
+            this.label3.Location = new System.Drawing.Point(19, 91);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(222, 16);
+            this.label3.Size = new System.Drawing.Size(160, 16);
             this.label3.TabIndex = 139;
-            this.label3.Text = "Number of TrueFalse Question:";
+            this.label3.Text = "True/False Questions:";
             // 
             // label2
             // 
@@ -159,9 +173,9 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(19, 41);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(257, 16);
+            this.label2.Size = new System.Drawing.Size(190, 16);
             this.label2.TabIndex = 138;
-            this.label2.Text = "Number of Multiple Choice Question:";
+            this.label2.Text = "Multiple Choice Questions:";
             // 
             // btnClose
             // 
@@ -198,26 +212,28 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.Image = global::DVLD.Properties.Resources.Magic_Wand801;
             this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(402, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(402, 26);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(78, 58);
+            this.pictureBox1.Size = new System.Drawing.Size(53, 42);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 132;
             this.pictureBox1.TabStop = false;
             // 
             // pbPersonImage
             // 
+            this.pbPersonImage.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pbPersonImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pbPersonImage.Image = global::DVLD.Properties.Resources.TestType_512;
             this.pbPersonImage.InitialImage = null;
             this.pbPersonImage.Location = new System.Drawing.Point(271, 4);
             this.pbPersonImage.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pbPersonImage.Name = "pbPersonImage";
-            this.pbPersonImage.Size = new System.Drawing.Size(149, 125);
+            this.pbPersonImage.Size = new System.Drawing.Size(141, 113);
             this.pbPersonImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbPersonImage.TabIndex = 130;
             this.pbPersonImage.TabStop = false;
@@ -227,7 +243,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(248)))), ((int)(((byte)(253)))));
             this.ClientSize = new System.Drawing.Size(720, 498);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnGenerate);
@@ -236,7 +252,12 @@
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pbPersonImage);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmGenerateQuestions";
+            this.ShowIcon = false;
+            this.ShowInTaskbar = false;
             this.Text = "Generate Questions";
             this.Load += new System.EventHandler(this.frmGenerateQuestions_Load);
             this.panel1.ResumeLayout(false);

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmReplaceLostOrDamagedLicenseApplication));
             this.llShowLicenseInfo = new System.Windows.Forms.LinkLabel();
             this.lblTitle = new System.Windows.Forms.Label();
             this.llShowLicenseHistory = new System.Windows.Forms.LinkLabel();
@@ -70,7 +71,7 @@
             // 
             this.llShowLicenseInfo.AutoSize = true;
             this.llShowLicenseInfo.Enabled = false;
-            this.llShowLicenseInfo.Location = new System.Drawing.Point(281, 648);
+            this.llShowLicenseInfo.Location = new System.Drawing.Point(187, 571);
             this.llShowLicenseInfo.Name = "llShowLicenseInfo";
             this.llShowLicenseInfo.Size = new System.Drawing.Size(183, 20);
             this.llShowLicenseInfo.TabIndex = 189;
@@ -80,9 +81,10 @@
             // 
             // lblTitle
             // 
-            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblTitle.Location = new System.Drawing.Point(5, 16);
+            this.lblTitle.BackColor = System.Drawing.Color.Transparent;
+            this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(61)))), ((int)(((byte)(125)))));
+            this.lblTitle.Location = new System.Drawing.Point(6, 9);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(875, 39);
             this.lblTitle.TabIndex = 183;
@@ -93,7 +95,7 @@
             // 
             this.llShowLicenseHistory.AutoSize = true;
             this.llShowLicenseHistory.Enabled = false;
-            this.llShowLicenseHistory.Location = new System.Drawing.Point(98, 648);
+            this.llShowLicenseHistory.Location = new System.Drawing.Point(12, 571);
             this.llShowLicenseHistory.Name = "llShowLicenseHistory";
             this.llShowLicenseHistory.Size = new System.Drawing.Size(169, 20);
             this.llShowLicenseHistory.TabIndex = 188;
@@ -103,39 +105,50 @@
             // 
             // btnIssueReplacement
             // 
+            this.btnIssueReplacement.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnIssueReplacement.BackColor = System.Drawing.Color.Transparent;
+            this.btnIssueReplacement.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnIssueReplacement.Enabled = false;
             this.btnIssueReplacement.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnIssueReplacement.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIssueReplacement.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(61)))), ((int)(((byte)(125)))));
             this.btnIssueReplacement.Image = global::DVLD.Properties.Resources.Renew_Driving_License_32;
             this.btnIssueReplacement.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnIssueReplacement.Location = new System.Drawing.Point(679, 640);
+            this.btnIssueReplacement.Location = new System.Drawing.Point(701, 573);
+            this.btnIssueReplacement.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnIssueReplacement.Name = "btnIssueReplacement";
-            this.btnIssueReplacement.Size = new System.Drawing.Size(193, 37);
+            this.btnIssueReplacement.Size = new System.Drawing.Size(170, 36);
             this.btnIssueReplacement.TabIndex = 187;
             this.btnIssueReplacement.Text = "Issue Replacement";
             this.btnIssueReplacement.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnIssueReplacement.UseVisualStyleBackColor = true;
+            this.btnIssueReplacement.UseVisualStyleBackColor = false;
             this.btnIssueReplacement.Click += new System.EventHandler(this.btnIssueReplacement_Click);
             // 
             // btnClose
             // 
+            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnClose.BackColor = System.Drawing.Color.Transparent;
+            this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnClose.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(61)))), ((int)(((byte)(125)))));
             this.btnClose.Image = global::DVLD.Properties.Resources.Close_32;
             this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClose.Location = new System.Drawing.Point(546, 640);
+            this.btnClose.Location = new System.Drawing.Point(569, 573);
             this.btnClose.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(126, 37);
+            this.btnClose.Size = new System.Drawing.Size(125, 36);
             this.btnClose.TabIndex = 186;
             this.btnClose.Text = "Close";
-            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.UseVisualStyleBackColor = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(5, 38);
+            this.label4.Location = new System.Drawing.Point(4, 38);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(160, 20);
@@ -157,7 +170,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(5, 70);
+            this.label5.Location = new System.Drawing.Point(4, 71);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(147, 20);
@@ -167,9 +180,10 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = global::DVLD.Properties.Resources.Calendar_32;
-            this.pictureBox4.Location = new System.Drawing.Point(176, 70);
+            this.pictureBox4.Location = new System.Drawing.Point(176, 71);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(31, 26);
+            this.pictureBox4.Size = new System.Drawing.Size(32, 26);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 175;
             this.pictureBox4.TabStop = false;
@@ -178,7 +192,7 @@
             // 
             this.lblApplicationDate.AutoSize = true;
             this.lblApplicationDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblApplicationDate.Location = new System.Drawing.Point(214, 70);
+            this.lblApplicationDate.Location = new System.Drawing.Point(214, 71);
             this.lblApplicationDate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblApplicationDate.Name = "lblApplicationDate";
             this.lblApplicationDate.Size = new System.Drawing.Size(109, 20);
@@ -189,8 +203,9 @@
             // 
             this.pictureBox3.Image = global::DVLD.Properties.Resources.money_32;
             this.pictureBox3.Location = new System.Drawing.Point(176, 102);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(31, 26);
+            this.pictureBox3.Size = new System.Drawing.Size(32, 26);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 178;
             this.pictureBox3.TabStop = false;
@@ -199,7 +214,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(5, 102);
+            this.label2.Location = new System.Drawing.Point(4, 102);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(148, 20);
@@ -243,8 +258,9 @@
             // 
             this.pictureBox1.Image = global::DVLD.Properties.Resources.User_32__2;
             this.pictureBox1.Location = new System.Drawing.Point(584, 102);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(31, 26);
+            this.pictureBox1.Size = new System.Drawing.Size(32, 26);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 182;
             this.pictureBox1.TabStop = false;
@@ -253,8 +269,9 @@
             // 
             this.pictureBox2.Image = global::DVLD.Properties.Resources.Number_32;
             this.pictureBox2.Location = new System.Drawing.Point(176, 38);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(31, 26);
+            this.pictureBox2.Size = new System.Drawing.Size(32, 26);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 183;
             this.pictureBox2.TabStop = false;
@@ -285,8 +302,9 @@
             // 
             this.pictureBox7.Image = global::DVLD.Properties.Resources.Renew_Driving_License_32;
             this.pictureBox7.Location = new System.Drawing.Point(584, 38);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(31, 26);
+            this.pictureBox7.Size = new System.Drawing.Size(32, 26);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox7.TabIndex = 192;
             this.pictureBox7.TabStop = false;
@@ -295,7 +313,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(399, 70);
+            this.label12.Location = new System.Drawing.Point(399, 71);
             this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(132, 20);
@@ -306,7 +324,7 @@
             // 
             this.lblOldLicenseID.AutoSize = true;
             this.lblOldLicenseID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOldLicenseID.Location = new System.Drawing.Point(622, 70);
+            this.lblOldLicenseID.Location = new System.Drawing.Point(622, 71);
             this.lblOldLicenseID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblOldLicenseID.Name = "lblOldLicenseID";
             this.lblOldLicenseID.Size = new System.Drawing.Size(49, 20);
@@ -316,9 +334,10 @@
             // pictureBox8
             // 
             this.pictureBox8.Image = global::DVLD.Properties.Resources.LocalDriving_License;
-            this.pictureBox8.Location = new System.Drawing.Point(584, 70);
+            this.pictureBox8.Location = new System.Drawing.Point(584, 71);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(31, 26);
+            this.pictureBox8.Size = new System.Drawing.Size(32, 26);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox8.TabIndex = 195;
             this.pictureBox8.TabStop = false;
@@ -343,9 +362,13 @@
             this.gpApplicationInfo.Controls.Add(this.label5);
             this.gpApplicationInfo.Controls.Add(this.lblApplicationID);
             this.gpApplicationInfo.Controls.Add(this.label4);
-            this.gpApplicationInfo.Location = new System.Drawing.Point(22, 492);
+            this.gpApplicationInfo.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gpApplicationInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(61)))), ((int)(((byte)(125)))));
+            this.gpApplicationInfo.Location = new System.Drawing.Point(12, 426);
+            this.gpApplicationInfo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.gpApplicationInfo.Name = "gpApplicationInfo";
-            this.gpApplicationInfo.Size = new System.Drawing.Size(850, 142);
+            this.gpApplicationInfo.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.gpApplicationInfo.Size = new System.Drawing.Size(860, 142);
             this.gpApplicationInfo.TabIndex = 185;
             this.gpApplicationInfo.TabStop = false;
             this.gpApplicationInfo.Text = "Application Info for License Replacement";
@@ -354,8 +377,10 @@
             // 
             this.gbReplacementFor.Controls.Add(this.rbLostLicense);
             this.gbReplacementFor.Controls.Add(this.rbDamagedLicense);
-            this.gbReplacementFor.Location = new System.Drawing.Point(635, 58);
+            this.gbReplacementFor.Location = new System.Drawing.Point(634, 52);
+            this.gbReplacementFor.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.gbReplacementFor.Name = "gbReplacementFor";
+            this.gbReplacementFor.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.gbReplacementFor.Size = new System.Drawing.Size(237, 94);
             this.gbReplacementFor.TabIndex = 191;
             this.gbReplacementFor.TabStop = false;
@@ -365,6 +390,7 @@
             // 
             this.rbLostLicense.AutoSize = true;
             this.rbLostLicense.Location = new System.Drawing.Point(9, 55);
+            this.rbLostLicense.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.rbLostLicense.Name = "rbLostLicense";
             this.rbLostLicense.Size = new System.Drawing.Size(117, 24);
             this.rbLostLicense.TabIndex = 1;
@@ -376,6 +402,7 @@
             // 
             this.rbDamagedLicense.AutoSize = true;
             this.rbDamagedLicense.Location = new System.Drawing.Point(8, 27);
+            this.rbDamagedLicense.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.rbDamagedLicense.Name = "rbDamagedLicense";
             this.rbDamagedLicense.Size = new System.Drawing.Size(156, 24);
             this.rbDamagedLicense.TabIndex = 0;
@@ -385,12 +412,13 @@
             // 
             // ctrlDriverLicenseInfoWithFilter1
             // 
-            this.ctrlDriverLicenseInfoWithFilter1.BackColor = System.Drawing.Color.White;
+            this.ctrlDriverLicenseInfoWithFilter1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(248)))), ((int)(((byte)(253)))));
             this.ctrlDriverLicenseInfoWithFilter1.FilterEnabled = true;
+            this.ctrlDriverLicenseInfoWithFilter1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ctrlDriverLicenseInfoWithFilter1.Location = new System.Drawing.Point(7, 38);
             this.ctrlDriverLicenseInfoWithFilter1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ctrlDriverLicenseInfoWithFilter1.Name = "ctrlDriverLicenseInfoWithFilter1";
-            this.ctrlDriverLicenseInfoWithFilter1.Size = new System.Drawing.Size(874, 455);
+            this.ctrlDriverLicenseInfoWithFilter1.Size = new System.Drawing.Size(874, 389);
             this.ctrlDriverLicenseInfoWithFilter1.TabIndex = 190;
             this.ctrlDriverLicenseInfoWithFilter1.OnLicenseSelected += new System.Action<int>(this.ctrlDriverLicenseInfoWithFilter1_OnLicenseSelected);
             // 
@@ -398,9 +426,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(248)))), ((int)(((byte)(253)))));
             this.CancelButton = this.btnClose;
-            this.ClientSize = new System.Drawing.Size(885, 695);
+            this.ClientSize = new System.Drawing.Size(885, 622);
             this.Controls.Add(this.gbReplacementFor);
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.ctrlDriverLicenseInfoWithFilter1);
@@ -410,9 +438,13 @@
             this.Controls.Add(this.gpApplicationInfo);
             this.Controls.Add(this.btnClose);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmReplaceLostOrDamagedLicenseApplication";
+            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "License Replacement";
             this.Activated += new System.EventHandler(this.frmReplaceLostOrDamagedLicenseApplication_Activated);

@@ -432,6 +432,16 @@ namespace DVLD.Documents
                 Cursor = Cursors.Default;
             }
         }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void dgvDecuments_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 
 }

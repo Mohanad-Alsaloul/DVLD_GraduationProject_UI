@@ -82,42 +82,6 @@ namespace DVLD.Licenses
 
         }
 
-        private void lblTitle_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnRenewLicense_Click(object sender, EventArgs e)
-        {
-            if (MessageBox.Show("Are you sure you want to Renew the license?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
-            {
-                return;
-            }
-
-           
-            clsLicense NewLicense = 
-                ctrlDriverLicenseInfoWithFilter1.SelectedLicenseInfo.RenewLicense(txtNotes.Text.Trim(),
-                clsGlobal.CurrentUser.UserID);
-
-            if (NewLicense==null)
-            {
-                MessageBox.Show("Faild to Renew the License", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
-                return;
-            }
-
-            lblApplicationID.Text= NewLicense.ApplicationID.ToString();
-            _NewLicenseID = NewLicense.LicenseID;
-            lblRenewedLicenseID.Text = _NewLicenseID.ToString();
-            MessageBox.Show("Licensed Renewed Successfully with ID=" + _NewLicenseID.ToString(), "License Issued", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-            btnRenewLicense.Enabled = false;
-            ctrlDriverLicenseInfoWithFilter1.FilterEnabled = false;
-            llShowLicenseInfo.Enabled = true;
-
-            
-
-        }
 
         private void frmRenewLocalDrivingLicenseApplication_Activated(object sender, EventArgs e)
         {
@@ -139,7 +103,37 @@ namespace DVLD.Licenses
             frm.ShowDialog();
         }
 
-        private void btnClose_Click(object sender, EventArgs e)
+        private void btnRenewLicense_Click_1(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure you want to Renew the license?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+            {
+                return;
+            }
+
+
+            clsLicense NewLicense =
+                ctrlDriverLicenseInfoWithFilter1.SelectedLicenseInfo.RenewLicense(txtNotes.Text.Trim(),
+                clsGlobal.CurrentUser.UserID);
+
+            if (NewLicense == null)
+            {
+                MessageBox.Show("Faild to Renew the License", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                return;
+            }
+
+            lblApplicationID.Text = NewLicense.ApplicationID.ToString();
+            _NewLicenseID = NewLicense.LicenseID;
+            lblRenewedLicenseID.Text = _NewLicenseID.ToString();
+            MessageBox.Show("Licensed Renewed Successfully with ID=" + _NewLicenseID.ToString(), "License Issued", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            btnRenewLicense.Enabled = false;
+            ctrlDriverLicenseInfoWithFilter1.FilterEnabled = false;
+            llShowLicenseInfo.Enabled = true;
+
+        }
+
+        private void btnClose_Click_1(object sender, EventArgs e)
         {
             this.Close();
         }

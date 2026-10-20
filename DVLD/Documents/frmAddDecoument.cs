@@ -223,5 +223,10 @@ namespace DVLD.Documents
             }
 
         }
+
+        private void lblTitle_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

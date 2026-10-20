@@ -153,6 +153,8 @@ namespace DVLD.QuestionBank
                 dgvQuestions.Columns[10].Width = 170;
             }
 
+            cbFilterBy.SelectedIndex = 0;
+
         }
 
         private void cbFilterBy_SelectedIndexChanged(object sender, EventArgs e)
@@ -189,6 +191,7 @@ namespace DVLD.QuestionBank
 
                 txtFilterValue.Text = "";
                 txtFilterValue.Focus();
+                _RefreshQuestionsList();
             }
         }
 
@@ -741,6 +744,11 @@ namespace DVLD.QuestionBank
 
             _RefreshQuestionsList();
 
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -65,13 +65,14 @@
             // txtLicenseID
             // 
             this.txtLicenseID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtLicenseID.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLicenseID.Location = new System.Drawing.Point(113, 26);
             this.txtLicenseID.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtLicenseID.Name = "txtLicenseID";
-            this.txtLicenseID.Size = new System.Drawing.Size(214, 20);
+            this.txtLicenseID.Size = new System.Drawing.Size(214, 23);
             this.txtLicenseID.TabIndex = 17;
-             this.txtLicenseID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtLicenseID_KeyPress);
-             this.txtLicenseID.Validating += new System.ComponentModel.CancelEventHandler(this.txtLicenseID_Validating);
+            this.txtLicenseID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtLicenseID_KeyPress);
+            this.txtLicenseID.Validating += new System.ComponentModel.CancelEventHandler(this.txtLicenseID_Validating);
             // 
             // label1
             // 
@@ -89,13 +90,14 @@
             // 
             // ctrlDriverLicenseInfo1
             // 
+            this.ctrlDriverLicenseInfo1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(248)))), ((int)(((byte)(253)))));
             this.ctrlDriverLicenseInfo1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ctrlDriverLicenseInfo1.Location = new System.Drawing.Point(4, 73);
             this.ctrlDriverLicenseInfo1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ctrlDriverLicenseInfo1.Name = "ctrlDriverLicenseInfo1";
-            this.ctrlDriverLicenseInfo1.Size = new System.Drawing.Size(867, 341);
+            this.ctrlDriverLicenseInfo1.Size = new System.Drawing.Size(867, 293);
             this.ctrlDriverLicenseInfo1.TabIndex = 0;
-             // 
+            // 
             // ctrlDriverLicenseInfoWithFilter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -104,8 +106,8 @@
             this.Controls.Add(this.gbFilters);
             this.Controls.Add(this.ctrlDriverLicenseInfo1);
             this.Name = "ctrlDriverLicenseInfoWithFilter";
-            this.Size = new System.Drawing.Size(874, 413);
-             this.gbFilters.ResumeLayout(false);
+            this.Size = new System.Drawing.Size(865, 364);
+            this.gbFilters.ResumeLayout(false);
             this.gbFilters.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
